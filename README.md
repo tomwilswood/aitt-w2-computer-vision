@@ -49,11 +49,11 @@ In this task, you should extend your program so that it only looks for noses wit
 2.	For each face found, detect the position of noses within its bounds, again using a Cascade classifier
 3.	Draw a red nose over every detected nose within the face
 
-You can use the setROI method (see documentation) to specify that an operation (i.e. searching for noses) should only be applied to a sub-region of an image (i.e. the position of a face). Use this method to specify that the nose detection should only be performed within the bounds of a detected face. You might also wish to explore making your nose detector more reliable and efficient by making the region of interest smaller than the whole face (most noses are somewhere in the middle!).
+You can use the setROI method (see [documentation](http://atduskgreg.github.io/opencv-processing/reference/gab/opencv/OpenCV.html#setROI(int, int, int, int)) to specify that an operation (i.e. searching for noses) should only be applied to a sub-region of an image (i.e. the position of a face). Use this method to specify that the nose detection should only be performed within the bounds of a detected face. You might also wish to explore making your nose detector more reliable and efficient by making the region of interest smaller than the whole face (most noses are somewhere in the middle!).
 
-Task 3: A Simple Movement Game with Optical Flow
+## Task 3: A Simple Movement Game with Optical Flow
 
-In this final task, we will explore another common computer vision technique called Optical Flow to create a movement game. Optical flow tracks the amount and direction of movement in the pixels of a series of video frame (see this article for more information). 
+In this final task, we will explore another common computer vision technique called Optical Flow to create a movement game. Optical flow tracks the amount and direction of movement in the pixels of a series of video frame (see [this article](http://docs.opencv.org/master/d7/d8b/tutorial_py_lucas_kanade.html#gsc.tab=0) for more information). 
 
 You are going to use this technique to create a simple movement game, which has the following mechanic:
 
@@ -61,13 +61,13 @@ You are going to use this technique to create a simple movement game, which has 
 2.	Display the word “correct” if the user moves as instructed and “incorrect” if they don’t
 3.	Repeat, incrementing a score counter every time the player moves correctly and decrementing it if they have moved incorrectly
 
-Implementing the game mechanic described above using optical flow is reasonably simple. First, you should add the calculateOpticalFlow (see docs) method to the draw loop. This method call calculates the current optical flow in the video, with respect to subsequent frames. Second, you should call the getAverageFlow (see docs) method, which returns a PVector specifying the average direction of movement in the video. You can use this vector to determine whether the user has moved to the left or right, by looking at its direction and magnitude. 
+Implementing the game mechanic described above using optical flow is reasonably simple. First, you should add the calculateOpticalFlow (see [docs](http://atduskgreg.github.io/opencv-processing/reference/gab/opencv/OpenCV.html#calculateOpticalFlow())) method to the draw loop. This method call calculates the current optical flow in the video, with respect to subsequent frames. Second, you should call the getAverageFlow (see [docs](http://atduskgreg.github.io/opencv-processing/reference/gab/opencv/OpenCV.html#getAverageFlow())) method, which returns a PVector specifying the average direction of movement in the video. You can use this vector to determine whether the user has moved to the left or right, by looking at its direction and magnitude. 
  
-Optional Extensions
+## Optional Extensions
 
-If you complete all of the above tasks before the end of the practical, or would like to continue to develop your skills in your free study time, then you should consider experimenting with some of the other OpenCV for Processing examples to:
+If you complete all of the above tasks before the end of the practical, or would like to continue to develop your skills in your free study time, then you should consider experimenting with some of the other [OpenCV for Processing examples](https://github.com/atduskgreg/opencv-processing) to:
 
-•	Use Optical Flow to create an automatic security camera that records still images when someone moves in a video stream (this could be limited to a rate of once every 10 seconds). 
-•	Use Background Subtraction and a Region of Interest to implement the Coffee Alarm described in the lecture (i.e. by detecting a significant difference between a recorded image of an empty coffee pot and a video frame showing a pot that’s filling with coffee).
-•	Use a combination of Hue Range Selection and Contour Detection to implement the Bubblegum Sequencer example from the lecture.
+- Use Optical Flow to create an automatic security camera that records still images when someone moves in a video stream (this could be limited to a rate of once every 10 seconds). 
+- Use Background Subtraction and a Region of Interest to implement the Coffee Alarm described in the lecture (i.e. by detecting a significant difference between a recorded image of an empty coffee pot and a video frame showing a pot that’s filling with coffee).
+- Use a combination of Hue Range Selection and Contour Detection to implement the Bubblegum Sequencer example from the lecture.
 
