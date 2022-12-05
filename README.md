@@ -53,7 +53,7 @@ You can use the setROI method (see [documentation](http://atduskgreg.github.io/o
 
 ## Task 3: A Simple Movement Game with Optical Flow
 
-In this final task, we will explore another common computer vision technique called Optical Flow to create a movement game. Optical flow tracks the amount and direction of movement in the pixels of a series of video frame (see [this article](http://docs.opencv.org/master/d7/d8b/tutorial_py_lucas_kanade.html#gsc.tab=0) for more information). 
+In this final task, we will explore another common computer vision technique called Optical Flow to create a movement game. Optical flow tracks the amount and direction of movement in the pixels of a series of video frame (see [this article](https://docs.opencv.org/4.x/d4/dee/tutorial_optical_flow.html) for more information). 
 
 You are going to use this technique to create a simple movement game, which has the following mechanic:
 
