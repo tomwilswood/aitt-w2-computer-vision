@@ -1,22 +1,24 @@
 # Prototyping vision-based interaction in Processing with OpenCV
 
-Open Computer Vision (more commonly known as OpenCV) is an industry standard library for implementing computer vision applications. There are implementations (or to be more precise [!‘wrapper libraries’](https://en.wikipedia.org/wiki/Wrapper_library) available that allow you to use OpenCV with nearly all major programming languages. I’ve found that the API is fairly similar (i.e. class names and methods are usually consistent) across languages. Therefore, once you’ve used OpenCV to program in one language, you can transfer your experience to others.
+Open Computer Vision (more commonly known as OpenCV) is an industry standard library for implementing computer vision applications. There are implementations (or to be more precise [‘wrapper libraries’](https://en.wikipedia.org/wiki/Wrapper_library) available that allow you to use OpenCV with nearly all major programming languages. I’ve found that the API is fairly similar (i.e. class names and methods are usually consistent) across languages. Therefore, once you’ve used OpenCV to program in one language, you can transfer your experience to others.
 
-In this practical, we will learn how to get started with prototyping vision-based interfaces by using the Processing implementation of OpenCV. We will experiment with the library by exploring some basic computer vision techniques in the context of interaction, including: Cascade classifiers, regions of interest and optical flow.  
-Getting the Library, Documentation and Template Project
+In this practical, we will learn how to get started with prototyping vision-based interfaces by using the Processing implementation of OpenCV. We will experiment with the library by exploring some basic computer vision techniques in the context of interaction, including: Cascade classifiers, regions of interest and optical flow.
 
-OpenCV is included as one of Processing’s standard libraries. If you are using Processing 3 you
-can import it into your project by searching for “OpenCV” in the Library Manager (Sketch > Import Library… > Add Library…). 
+## Getting the Library, Documentation and Template Project
 
-However, if you are using Processing 4 (i.e. the version in the lab you are working in for the practicals) you’ll have to use a newer beta version of the library. I’ve attached this newer version as a zip file (opencv_processing.zip) on this VLE item. You’ll need to download this, unzip it and copy the contents into the “libraries” folder within your Processing Sketchbook. You should find your sketchbook in the “Documents” folder in the lab computers. If you can’t see it, put your hand up and we’ll help you.
+To get started, make a copy of this repository on your GitHub account and clone it onto your local computer. You can do this by:
 
-You can find the documentation for OpenCV for Processing and some examples showing how to use it at the following link:
+- Clicking the "Use this template" button at the top-right on the page
+- Following the instructions in the week 1 section of the VLE to clone a repository onto your local computer
 
-•	https://github.com/atduskgreg/opencv-processing
-•	http://atduskgreg.github.io/opencv-processing/reference/
+The Git repository inlcudes a Processing Sketch that inlcudes everything you need to grab video frames from a camera and start processig them using OpenCV's algorithms. Open this sketch with Processing. 
 
-To help you get started, I’ve put together a template Processing sketch that you can base your code on today. This sketch includes the code you need to grab video frames for use with OpenCV. This sketch can be found in a .zip file attached to this VLE item.
-Task 1: Adding a Red Nose with a Cascade Classifier
+You can find the documentation for OpenCV for Processing and some examples showing how to use it at the following links:
+
+- https://github.com/atduskgreg/opencv-processing
+- http://atduskgreg.github.io/opencv-processing/reference/
+
+## Task 1: Adding a Red Nose with a Cascade Classifier
 
 Note: If you are completing this task in the lab under Covid restrictions, nose detection may not work – because you nose will be behind a mask! I would recommend that you address this issue by completing this task such that you detect your eyes instead of your nose.
 
