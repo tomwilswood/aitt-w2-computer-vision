@@ -11,9 +11,16 @@ To get started, make a copy of this repository on your GitHub account and clone 
 - Clicking the "Use this template" button at the top-right on the page
 - Following the instructions in the week 1 section of the VLE to clone a repository onto your local computer
 
-The Git repository inlcudes a Processing Sketch that inlcudes everything you need to grab video frames from a camera and start processig them using OpenCV's algorithms. Open this sketch with Processing. 
+The Git repository inlcudes a Processing Sketch that inlcudes everything you need to grab video frames from a camera and start processig them using OpenCV's algorithms. Open this sketch with Processing.
 
-You can find the documentation for OpenCV for Processing and some examples showing how to use it at the following links:
+For the sketch to work, you'll need to install a couple of libraries via the menu (Sketch > Import Library… > Add Library):
+
+- Open CV for Processing
+- Video Library for Processing 4
+
+Once you've installed these libraries, run the sketch. You should see an image from your webcam shown on the screen.
+
+You can find the documentation for OpenCV for Processing and some examples showing how to use it at the following links. This documentation will help you in the practical today:
 
 - https://github.com/atduskgreg/opencv-processing
 - http://atduskgreg.github.io/opencv-processing/reference/
