@@ -1,6 +1,6 @@
 # Prototyping vision-based interaction in Processing with OpenCV
 
-Open Computer Vision (more commonly known as OpenCV) is an industry standard library for implementing computer vision applications. There are implementations (or to be more precise [!‘wrapper libraries’][https://en.wikipedia.org/wiki/Wrapper_library]) available that allow you to use OpenCV with nearly all major programming languages. I’ve found that the API is fairly similar (i.e. class names and methods are usually consistent) across languages. Therefore, once you’ve used OpenCV to program in one language, you can transfer your experience to others.
+Open Computer Vision (more commonly known as OpenCV) is an industry standard library for implementing computer vision applications. There are implementations (or to be more precise [!‘wrapper libraries’](https://en.wikipedia.org/wiki/Wrapper_library) available that allow you to use OpenCV with nearly all major programming languages. I’ve found that the API is fairly similar (i.e. class names and methods are usually consistent) across languages. Therefore, once you’ve used OpenCV to program in one language, you can transfer your experience to others.
 
 In this practical, we will learn how to get started with prototyping vision-based interfaces by using the Processing implementation of OpenCV. We will experiment with the library by exploring some basic computer vision techniques in the context of interaction, including: Cascade classifiers, regions of interest and optical flow.  
 Getting the Library, Documentation and Template Project
