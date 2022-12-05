@@ -27,13 +27,11 @@ You can find the documentation for OpenCV for Processing and some examples showi
 
 ## Task 1: Adding a Red Nose with a Cascade Classifier
 
-Note: If you are completing this task in the lab under Covid restrictions, nose detection may not work – because you nose will be behind a mask! I would recommend that you address this issue by completing this task such that you detect your eyes instead of your nose.
-
 In this task you will create a simple vision-based interface that overlays a face found in a video stream with an image showing a funny mask. Your implementation will be based on the following example Processing sketch that uses a face detector to track the position of a face in a still image. 
 
-•	https://github.com/atduskgreg/opencv-processing/blob/master/examples/FaceDetection/FaceDetection.pde
+-	https://github.com/atduskgreg/opencv-processing/blob/master/examples/FaceDetection/FaceDetection.pde
 
-The example uses a Cascade classifier to track the positions of faces in an image. It works by looking for specific features in an image that match features that have been found in images of other faces (see the OpenCV docs for more information).
+The example uses a Cascade classifier to track the positions of faces in an image. It works by looking for specific features in an image that match features that have been found in images of other faces (see the OpenCV docs for [more information](http://docs.opencv.org/2.4/modules/objdetect/doc/cascade_classification.html?highlight=cascadeclassifier#cascadeclassifier)).
 
 In the example, you should see that a loadCascade method call initializes the face detector. The OpenCV.CASCADE_FRONTALFACE parameter currently specifies that the detector should look for faces. However, it can be configured to look for other facial features by changing this parameter (see the documentation for how). Add the code for initializing the tracker into the template sketch, and change the parameter so that it looks for noses rather than faces.
 
