@@ -33,15 +33,13 @@ In this task you will create a simple vision-based interface that overlays a fac
 
 The example uses a Cascade classifier to track the positions of faces in an image. It works by looking for specific features in an image that match features that have been found in images of other faces (see the OpenCV docs for [more information](http://docs.opencv.org/2.4/modules/objdetect/doc/cascade_classification.html?highlight=cascadeclassifier#cascadeclassifier)).
 
-In the example, you should see that a loadCascade method call initializes the face detector. The OpenCV.CASCADE_FRONTALFACE parameter currently specifies that the detector should look for faces. However, it can be configured to look for other facial features by changing this parameter (see the documentation for how). Add the code for initializing the tracker into the template sketch, and change the parameter so that it looks for noses rather than faces.
+In the example, you should see that a loadCascade method call initializes the face detector. The OpenCV.CASCADE_FRONTALFACE parameter currently specifies that the detector should look for faces. However, it can be configured to look for other facial features by changing this parameter (see the [documentation](http://atduskgreg.github.io/opencv-processing/reference/gab/opencv/OpenCV.html#loadCascade(java.lang.String)) for how). Add the code for initializing the tracker into the template sketch, and change the parameter so that it looks for noses rather than faces.
 
 Once the detector has been initialized in the setup method, the detect method is used to detect the position of all faces (or noses) in the camera image. The example only calls the detect method once, because it’s working on a still image. Add the detect method to the draw loop of the template sketch, so that it runs for every video frame (note that the template already uses the loadImage to load the latest video frame into the OpenCV object).
 
 The detect method returns an array of Rectangle objects that specify the position and size of all objects detected. These objects are then used to draw some green rectangles showing the position and size of these objects. Complete the task by adapting this code to draw a red “Comic Relief” nose on the detected nose positions instead.
 
-Task 2: More Accurate Nose Tracking with a Region of Interest
-
-Note: I have found that face detection seems to still work with a mask on, so you should still be able to complete this task as described.
+## Task 2: More Accurate Nose Tracking with a Region of Interest
 
 You might have noticed that the nose tracker from the previous task isn’t very reliable, with lots of objects that look a bit like noses being detected in error. One way to make a nose tracker more reliable is to only look for noses within the bounds of a valid face (we can assume most noses are on a face!). Doing this would be an example of the common computer vision approach of defining a “Region of Interest”. A region of interest is a sub-region of an image where we would like to search for a particular visual cue (creating a region of interest is a bit like creating a mask in Photoshop).
 
