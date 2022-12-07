@@ -8,7 +8,7 @@ In this practical, we will learn how to get started with prototyping vision-base
 
 To get started, make a copy of this repository on your GitHub account and clone it onto your local computer. You can do this by:
 
-- Clicking the "Use this template" button at the top-right on the page
+- Clicking the ```Use this template``` button at the top-right on the page
 - Following the instructions in the week 1 section of the VLE to clone a repository onto your local computer
 
 The Git repository inlcudes a Processing Sketch that inlcudes everything you need to grab video frames from a camera and start processig them using OpenCV's algorithms. Open this sketch with Processing.
