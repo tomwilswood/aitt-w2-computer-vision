@@ -22,6 +22,7 @@ void draw()
     cam.read();
     cam.loadPixels();
     opencv.loadImage((PImage)cam);
+    image(opencv.getInput(), 0, 0);
 
     // you should write most of your computer vision code here 
     
@@ -30,8 +31,6 @@ void draw()
     
     
     // end code
-    
-    image(opencv.getInput(), 0, 0);
   }
 }
 
