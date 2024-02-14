@@ -49,7 +49,7 @@ In this task, you should extend your program so that it only looks for noses wit
 2.	For each face found, detect the position of noses within its bounds, again using a Cascade classifier
 3.	Draw a red nose over every detected nose within the face
 
-You can use the ```setROI``` method (see [documentation](http://atduskgreg.github.io/opencv-processing/reference/gab/opencv/OpenCV.html) to specify that an operation (i.e. searching for noses) should only be applied to a sub-region of an image (i.e. the position of a face). Use this method to specify that the nose detection should only be performed within the bounds of a detected face. You might also wish to explore making your nose detector more reliable and efficient by making the region of interest smaller than the whole face (most noses are somewhere in the middle!).
+You can use the ```setROI``` method (see [documentation](http://atduskgreg.github.io/opencv-processing/reference/gab/opencv/OpenCV.html)) to specify that an operation (i.e. searching for noses) should only be applied to a sub-region of an image (i.e. the position of a face). Use this method to specify that the nose detection should only be performed within the bounds of a detected face. You might also wish to explore making your nose detector more reliable and efficient by making the region of interest smaller than the whole face (most noses are somewhere in the middle!).
 
 ## Task 3: A Simple Movement Game with Optical Flow
 
